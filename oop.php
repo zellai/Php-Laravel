@@ -2,6 +2,7 @@
     class Person{
         private $name;
         private $email;
+        public static $ageLimit = 40;
     
         public function __construct($name, $email){
             $this->name = $name;
@@ -28,8 +29,14 @@
         public function getEmail(){
             return $this->email. '<br>';
         }
-    }
 
+        public static function getAgeLimit(){
+            return self::$ageLimit.'<br>';
+        }
+    }
+    // static props and method
+    echo Person::$ageLimit.'<br>'; 
+    echo Person::getAgeLimit();
     // $person1 = new Person('John Doe', 'jd@gmail.com');
 
     // $person1->setName('Liyah Ozella');
