@@ -6,7 +6,7 @@
         public function __construct($name, $email){
             $this->name = $name;
             $this->email = $email;
-            echo 'Person created <br>';
+            echo __CLASS__.' created <br>';
         }
         public function setName($name){
             $this->name = $name;
