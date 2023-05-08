@@ -8,6 +8,11 @@
             $this->email = $email;
             echo __CLASS__.' created <br>';
         }
+
+        public function __destruct(){
+            echo __CLASS__.' destroyed<br>';
+        }
+        
         public function setName($name){
             $this->name = $name;
         }
