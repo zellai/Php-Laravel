@@ -19,13 +19,7 @@
    mysqli_close($conn);
 ?>
 
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title>PHP Blog</title>
-            <link rel="stylesheet" type="text/css" href ="https://bootswatch.com/5/cerulean/bootstrap.min.css">
-        </head>
-        <body>
+<?php include('inc/header.php'); ?>
             <div class="container">
                 <h1>Posts</h1>
                 <?php foreach($posts as $post) : ?>
@@ -37,5 +31,4 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-        </body>
-    </html>
+<?php include('inc/footer.php'); ?>

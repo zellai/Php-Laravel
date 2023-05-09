@@ -22,13 +22,7 @@
    mysqli_close($conn);
 ?>
 
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title>PHP Blog</title>
-            <link rel="stylesheet" type="text/css" href ="https://bootswatch.com/5/cerulean/bootstrap.min.css">
-        </head>
-        <body>
+<?php include('inc/header.php'); ?>
             <div class="container">
                 <a href="<?php echo ROOT_URL; ?>" class="btn btn-secondary">Back</a>
                 <h1><?php echo $post['title']; ?></h1>
@@ -36,5 +30,4 @@
                 <p><?php echo $post['body']; ?></p>
                 <!-- <a class="btn btn-default" href="post.php?id=<?php echo $post['id']; ?>">Read More</a> -->
             </div>
-        </body>
-    </html>
+<?php include('inc/footer.php'); ?>
