@@ -2,7 +2,7 @@
     require('config/config.php');
     require('config/db.php');
 
-    // Cretae query
+    // Create query
    $query = 'SELECT * FROM posts ORDER BY created_at DESC';
 
    // Get result
